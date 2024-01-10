@@ -1,0 +1,82 @@
+.events-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.events-heading {
+  font-size: 38px;
+  color: #a5eaf1;
+  margin-bottom: 20px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.circle {
+  position: relative;
+  width: 80px; 
+  height: 80px; 
+  border-radius: 50%;
+  border-color: white;
+  overflow: hidden;
+  cursor: pointer;
+  margin: 0 10px; 
+  transition: transform 0.3s ease-in-out;
+}
+
+.circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.circle:hover,
+.circle:active {
+  transform: scale(1.1);
+}
+
+.circle:hover .overlay {
+  opacity: 1;
+}
+
+.line {
+  height: 4px;
+  width: 70px; 
+  background-color: white;
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.9);
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  z-index: 999;
+  cursor: pointer;
+}
+
+.popup img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+

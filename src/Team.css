@@ -1,0 +1,83 @@
+.team-container {
+    text-align: center;
+    padding: 50px 0;
+  }
+  
+  .team-heading {
+    font-size: 58px;
+    font-weight: bold;
+    color: #f3f9f9;
+    margin-bottom: 30px;
+  }
+  
+  .team-category {
+    margin-bottom: 60px;
+  }
+  
+  .category-heading {
+    font-size: 28px;
+    font-weight: bold;
+    color: #3fadba;
+    margin-bottom: 20px;
+  }
+  
+  .team-circles {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .team-circle {
+    position: relative;
+    margin: 0 40px;
+    cursor: pointer;
+  }
+  
+  .team-circle img {
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .circle-border {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    box-sizing: border-box;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .overlay-text {
+    font-size: 16px;
+    color: #fff;
+    margin-top: 10px;
+  }
+  
+  .team-circle:hover img {
+    transform: scale(1.1);
+  }
+  
+  .team-circle:hover .overlay {
+    opacity: 1;
+  }
+  
